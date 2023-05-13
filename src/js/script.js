@@ -50,8 +50,5 @@ carousel.addEventListener('touchmove', dragging);
 
 carousel.addEventListener('mouseup', dragStop);
 carousel.addEventListener('touchend', dragStop);
-
-carousel.addEventListener('mouseout', dragStop);
-carousel.addEventListener('touchcancel', dragStop);
-
+
 window.addEventListener('resize', ajustarTamanhos);
