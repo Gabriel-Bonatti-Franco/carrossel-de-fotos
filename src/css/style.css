@@ -37,6 +37,8 @@ body{
     transform: translateY(-50%);
 
     box-shadow: 0px 0px 20px black;
+
+    user-select: none;
 }
 
 .wrapper i:first-child{
