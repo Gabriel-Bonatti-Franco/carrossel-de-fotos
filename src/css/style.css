@@ -55,6 +55,8 @@ body{
     overflow: hidden;
     white-space: nowrap;
     scroll-behavior: smooth;
+
+    border-radius: 20px;
 }
 
 .wrapper .carousel.dragging{
