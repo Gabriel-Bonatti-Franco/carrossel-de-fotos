@@ -2,6 +2,8 @@ const carousel = document.querySelector('.carousel');
 const firstImg = carousel.querySelectorAll('img')[0];
 const arrowIcons = document.querySelectorAll('.wrapper i');
 
+const tela = document.querySelector('body')
+
 let isDragStart = false, prevPageX, prevScroolLeft;
 let firstImgWidth = firstImg.clientWidth + 14;
 
@@ -50,5 +52,8 @@ carousel.addEventListener('touchmove', dragging);
 
 carousel.addEventListener('mouseup', dragStop);
 carousel.addEventListener('touchend', dragStop);
-
+
+tela.addEventListener('mouseup', dragStop);
+tela.addEventListener('touchend', dragStop);
+
 window.addEventListener('resize', ajustarTamanhos);
