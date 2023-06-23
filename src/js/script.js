@@ -53,7 +53,7 @@ carousel.addEventListener('touchmove', dragging);
 carousel.addEventListener('mouseup', dragStop);
 carousel.addEventListener('touchend', dragStop);
 
-tela.addEventListener('mouseup', dragStop);
-tela.addEventListener('touchend', dragStop);
+tela.addEventListener('mouseup', () => {alert('Soltou!')});
+tela.addEventListener('touchend', () => {alert('Soltou!')});
 
 window.addEventListener('resize', ajustarTamanhos);
